@@ -1,8 +1,18 @@
 function Poem({yearFromInternet, authorFromInternet, titleFromInternet, textFromInternet}) {
-    this.year = yearFromInternet,
-    this.author = authorFromInternet,
-    this.title = titleFromInternet,
-    this.text = textFromInternet
+    this.year = yearFromInternet;
+    this.author = authorFromInternet;
+    this.title = titleFromInternet;
+    this.text = textFromInternet;
+    this.makePage = function () {
+        console.log(`
+            Title: ${this.title}
+            
+            ${this.text}
+
+            Author: ${this.author}
+            Year: ${this.year}
+        `)
+    }
 }
 
 const poemData = {
@@ -20,4 +30,5 @@ const poemOfAndras = new Poem(poemData)
 
 // poemOfAndras.favBy = "András Ránki"
 
-console.log(Poem.prototype)
+poemOfAndras.makePage()
+
