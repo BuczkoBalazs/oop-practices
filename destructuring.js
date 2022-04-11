@@ -19,4 +19,12 @@ function funWithPoemData({yearFromInternet, authorFromInternet}) {
     console.log(authorFromInternet)
 };
 
-funWithPoemData(poemData)
+// funWithPoemData(poemData)
+
+const arr = ["a", "b", "c", "d"]
+
+const firstItem = arr[0]
+const secondItem = arr[1]
+const [firstItemX, secondItemX, ...elseX] = arr
+
+console.log(elseX)
